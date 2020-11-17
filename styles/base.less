@@ -16,6 +16,13 @@ atom-text-editor {
     color: @syntax-invisible-character-color;
   }
 
+  .line {
+    .cursor-line {
+      background-color: @syntax-gutter-background-color-selected;
+      color: @syntax-gutter-text-color-selected;
+    }
+  }
+
   .gutter {
     background-color: @syntax-gutter-background-color;
     color: @syntax-gutter-text-color;
@@ -27,6 +34,7 @@ atom-text-editor {
       }
 
       &.cursor-line-no-selection {
+        background-color: @syntax-gutter-background-color-selected;
         color: @syntax-gutter-text-color-selected;
       }
     }
@@ -50,7 +58,6 @@ atom-text-editor {
     background-color: @syntax-selection-color;
   }
 }
-
 
 // Syntax styles
 
@@ -122,7 +129,6 @@ atom-text-editor {
 .syntax--string {
   color: @green;
 
-
   &.syntax--regexp {
     color: @cyan;
 
@@ -168,7 +174,6 @@ atom-text-editor {
   &.syntax--section.syntax--embedded {
     color: darken(@red, 10%);
   }
-
 }
 
 .syntax--support {
@@ -176,7 +181,7 @@ atom-text-editor {
     color: @light-orange;
   }
 
-  &.syntax--function  {
+  &.syntax--function {
     color: @cyan;
 
     &.syntax--any-method {
@@ -197,7 +202,8 @@ atom-text-editor {
   &.syntax--other.syntax--inherited-class {
     color: @green;
   }
-  &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
+  &.syntax--name.syntax--class,
+  &.syntax--name.syntax--type.syntax--class {
     color: @light-orange;
   }
 
@@ -292,7 +298,6 @@ atom-text-editor {
     color: @green;
   }
 }
-
 
 // Mini editor
 
