@@ -1,13 +1,18 @@
 {
-  "name": "xcode-syntax",
+  "name": "atom-xcode-bigsur-syntax",
   "theme": "syntax",
   "version": "0.2.0",
-  "description": "A short description of your syntax theme",
+  "description": "A dark syntax theme for Atom based on the colors of the Big Sur update of Xcode",
   "keywords": [
     "syntax",
-    "theme"
+    "theme",
+    "atom",
+    "one",
+    "xcode",
+    "dark",
+    "apple"
   ],
-  "repository": "https://github.com/atom/xcode-syntax",
+  "repository": "https://github.com/cameron-charles/atom-xcode-bigsur-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
